@@ -28,5 +28,6 @@ def Weather():
 
 
 while True:
-    if Weather() != 0:
         Weather()
+        break
+        
