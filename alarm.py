@@ -1,5 +1,6 @@
 from datetime import datetime
 from playsound import playsound
+import os
 
 def validate_time(time_alarm):
     if len(time_alarm) != 8:
@@ -44,6 +45,6 @@ while True:
     if alarm_min == current_min:
         if alarm_sec == current_sec:
             print("Подъем!")
-            playsound('C:/PycharmProjects/pythonProject8/1.mp3')
+            playsound(os.getcwd() +'/1.mp3')
             #''' Здесь вводите свой адрес,где у вас имеется ваша запись'''
             break
